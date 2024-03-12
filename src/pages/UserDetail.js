@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 // import axios from 'axios';
 import { Spinner, Col, ListGroup, ListGroupItem, Badge, Container } from 'reactstrap';
-import { getUserById } from '../network/UserService'; // Servisi import ediyoruz
+import { getUserById } from '../network/UserService';
 import { UseLoading } from '../hooks/UseLoading';
 
 const UserDetail = () => {
   const { id } = useParams();
   const [userDetails, setUserDetails] = useState(null);
-  const { isLoading, setIsLoading } = UseLoading(); // Yeni hook'u kullanın
+  const { isLoading, setIsLoading } = UseLoading();
 
   useEffect(() => {
     const fetchUserDetails = async () => {

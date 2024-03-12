@@ -36,7 +36,7 @@ html, body, #root {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 48px; /* Footer yüksekliği */
+  height: 48px;
   background-color: #dbdfe8;
   color: #3f485a;
   font-weight: 600;
@@ -64,5 +64,4 @@ h5 {
   justify-content: space-between;
   align-items: center;
   font-size: 17px;
-  /* İstenen diğer stiller */
 }
